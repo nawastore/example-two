@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang=ar dir=rtl>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> | بورتوفوليو تصوير فوتوغرافي</title>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel=stylesheet>
+<style>:root{--beige:#F5F1E8;--light-brown:#D8C4A7;--dark-brown:#3A2D28;--black:#1A1A1A;--white:#FFFFFF;--transition:all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'El Messiri',sans-serif;color:var(--dark-brown);background:var(--beige);overflow-x:hidden;scroll-behavior:smooth}.lang-modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(26,26,26,.95);display:flex;justify-content:center;align-items:center;z-index:3000;transition:var(--transition);opacity:0;visibility:hidden;pointer-events:none}.lang-modal-overlay.active{opacity:1;visibility:visible;pointer-events:auto}.lang-modal{background:var(--beige);border-radius:15px;padding:3rem;text-align:center;max-width:500px;width:90%;box-shadow:0 15px 50px rgba(0,0,0,.3);transform:scale(.9);opacity:0;transition:all .5s ease}.lang-modal-overlay.active .lang-modal{transform:scale(1);opacity:1}.lang-modal h2{font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:2rem;color:var(--dark-brown)}.lang-options{display:flex;justify-content:center;gap:2rem;margin:2rem 0}.lang-btn{background:var(--dark-brown);color:var(--beige);border:none;padding:1.5rem 2.5rem;font-size:1.2rem;font-weight:600;border-radius:8px;cursor:pointer;transition:var(--transition);width:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}.lang-btn:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(58,45,40,.4)}.lang-btn i{font-size:2.5rem}.loading-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:var(--beige);display:flex;justify-content:center;align-items:center;z-index:2500;opacity:0;visibility:hidden;transition:var(--transition)}.loading-overlay.active{opacity:1;visibility:visible}.spinner{width:70px;height:70px;border:5px solid var(--light-brown);border-top:5px solid var(--dark-brown);border-radius:50%;animation:spin 1s linear infinite}@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.navbar{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:1.5rem 5%;z-index:1000;transition:var(--transition);background:0 0}.navbar.scrolled{background:rgba(245,241,232,.95);padding:1rem 5%;box-shadow:0 2px 15px rgba(0,0,0,.05)}.logo{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--white);text-decoration:none;display:flex;align-items:center}.logo i{margin-right:10px}.navbar.scrolled .logo{color:var(--dark-brown)}.nav-links{display:flex;list-style:none}.nav-links li{margin-left:2rem}.nav-links a{color:var(--white);text-decoration:none;font-weight:500;font-size:1.4rem;letter-spacing:1px;transition:var(--transition);position:relative}.navbar.scrolled .nav-links a{color:var(--dark-brown)}.nav-links a:after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:2px;background:var(--white);transition:var(--transition)}.navbar.scrolled .nav-links a:after{background:var(--dark-brown)}.nav-links a:hover:after{width:100%}.hamburger{display:none;cursor:pointer;background:0 0;border:none;color:var(--white);font-size:1.8rem}.navbar.scrolled .hamburger{color:var(--dark-brown)}.lang-switcher{background:rgba(255,255,255,.2);color:var(--white);border:none;padding:.5rem 1rem;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:.5rem;font-weight:500;transition:var(--transition);margin-left:1rem}.navbar.scrolled .lang-switcher{background:rgba(58,45,40,.1);color:var(--dark-brown)}.lang-switcher:hover{background:rgba(255,255,255,.3)}.navbar.scrolled .lang-switcher:hover{background:rgba(58,45,40,.2)}.book-btn{position:fixed;right:2rem;bottom:2rem;background:var(--dark-brown);color:var(--beige);border:none;padding:1rem 2rem;font-size:1.1rem;font-weight:600;letter-spacing:1px;cursor:pointer;z-index:1000;border-radius:30px;box-shadow:0 5px 20px rgba(58,45,40,.3);transition:var(--transition);transform:translateY(0)}.book-btn:hover{transform:translateY(-5px);box-shadow:0 8px 25px rgba(58,45,40,.4)}.hero{height:100vh;width:100%;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}.hero-slider{position:absolute;top:0;left:0;width:100%;height:100%}.slide{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;transition:opacity 1.5s ease-in-out;background-size:cover;background-position:center}.slide.active{opacity:1}.slide:first-child{background-image:url('https://images.unsplash.com/photo-1750086719553-fcc422756c1c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')}.slide:nth-child(2){background-image:url('https://images.unsplash.com/photo-1749894274841-95fa78941841?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')}.slide:nth-child(3){background-image:url('https://images.unsplash.com/photo-1748969068126-b4ff7a7fa8c5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')}.hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(26,26,26,.4);z-index:0}.hero-content{text-align:center;color:var(--white);z-index:1;padding:0 2rem;max-width:900px}.hero-title{font-family:'Playfair Display',serif;font-size:4.5rem;font-weight:700;margin-bottom:1rem;letter-spacing:2px;text-shadow:0 2px 10px rgba(0,0,0,.3)}.hero-subtitle{font-size:1.6rem;font-weight:400;letter-spacing:5px;text-transform:uppercase;margin-bottom:2rem}.hero-btn{background:0 0;color:var(--white);border:2px solid var(--white);padding:.8rem 2.5rem;font-size:1.2rem;font-weight:600;letter-spacing:1px;cursor:pointer;border-radius:30px;transition:var(--transition);text-transform:uppercase}.hero-btn:hover{background:var(--white);color:var(--dark-brown)}.scroll-indicator{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);color:var(--white);font-size:1.5rem;animation:bounce 2s infinite}@keyframes bounce{0%,100%,20%,50%,80%{transform:translateY(0) translateX(-50%)}40%{transform:translateY(-20px) translateX(-50%)}60%{transform:translateY(-10px) translateX(-50%)}}section{padding:8rem 5%;position:relative;overflow:hidden}.section-title{font-family:'Playfair Display',serif;font-size:2.5rem;text-align:center;margin-bottom:5rem;position:relative}.section-title:after{content:'';position:absolute;bottom:-1rem;left:50%;transform:translateX(-50%);width:80px;height:3px;background:var(--light-brown)}.about-content{display:flex;align-items:center;gap:5rem;max-width:1200px;margin:0 auto}.about-text{flex:1}.about-text p{margin-bottom:1.5rem;line-height:1.8;font-size:1.4rem}.signature{font-family:'Playfair Display',serif;font-size:2.5rem;margin-top:2rem;color:var(--dark-brown)}.about-image{flex:1;position:relative;height:500px;overflow:hidden;border-radius:5px;box-shadow:0 20px 40px rgba(0,0,0,.15)}.about-image img{width:100%;height:100%;object-fit:cover;transition:var(--transition)}.about-image:hover img{transform:scale(1.05)}.gallery{background:#f5f0e6;padding:8rem 5%;position:relative;overflow:hidden}.gallery:before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="%23d6c7b0" stroke-width="0.5" opacity="0.3"/></svg>');z-index:0;opacity:.3}.gallery .section-title{font-family:'Playfair Display',serif;font-size:3.2rem;font-weight:600;letter-spacing:1px;color:#5c4b3b;text-shadow:1px 1px 1px rgba(0,0,0,.1);margin-bottom:4rem}.gallery .section-title:after{background:#c1b49a;width:120px;height:2px;bottom:-1.5rem}.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2.5rem;position:relative;z-index:1}.gallery-item{position:relative;height:500px;overflow:hidden;border-radius:2px;box-shadow:0 5px 15px rgba(0,0,0,.08);transition:transform .4s ease;background:#fff;border:8px solid #fff;box-sizing:border-box}.gallery-item:before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(92,75,59,.03);z-index:1}.gallery-item img{width:100%;height:100%;object-fit:cover;filter:sepia(15%) brightness(95%) contrast(110%);transition:all .5s ease}.gallery-item:hover{transform:translateY(-8px);box-shadow:0 15px 30px rgba(0,0,0,.15)}.gallery-item:hover img{filter:sepia(30%) brightness(100%) contrast(120%);transform:scale(1.05)}.gallery-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(34,27,21,.85);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:2rem;opacity:0;transition:opacity .4s ease;text-align:center;z-index:2}.gallery-item:hover .gallery-overlay{opacity:1}.gallery-title{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:600;color:#f8f4ec;margin-bottom:1rem;letter-spacing:.5px;position:relative;padding-bottom:.8rem}.gallery-title:after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60px;height:1px;background:#c1b49a}.gallery-desc{font-family:Montserrat,sans-serif;font-size:1.2rem;color:#e4dcd0;line-height:1.7;margin-top:1.5rem;font-weight:400}.vintage-frame{position:absolute;top:15px;left:15px;right:15px;bottom:15px;border:1px solid rgba(255,255,255,.2);pointer-events:none;z-index:1}.vintage-tape{position:absolute;width:60px;height:20px;background:rgba(255,255,255,.4);transform:rotate(-35deg);top:-10px;left:50%;z-index:3;box-shadow:0 1px 3px rgba(0,0,0,.2)}.cinematic{padding:0}.cinematic-item{height:100vh;position:relative;display:flex;align-items:center;justify-content:center}.cinematic-image{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1}.cinematic-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.3);z-index:0}.cinematic-content{max-width:800px;text-align:center;color:var(--white);padding:2rem;z-index:1}.cinematic-title{font-family:'Playfair Display',serif;font-size:3rem;margin-bottom:1.5rem;font-style:italic;font-weight:400}.cinematic-text{font-size:1.6rem;line-height:1.8;margin-bottom:2rem;letter-spacing:.5px;font-weight:700}.testimonials-container{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:3rem}.testimonial{background:var(--white);padding:2.5rem;border-radius:5px;box-shadow:0 5px 25px rgba(0,0,0,.05);position:relative;transition:var(--transition)}.testimonial:hover{transform:translateY(-10px);box-shadow:0 15px 35px rgba(0,0,0,.1)}.testimonial:before{content:"";position:absolute;top:-20px;left:20px;font-family:'Playfair Display',serif;font-size:6rem;color:var(--light-brown);opacity:.2;line-height:1}.testimonial-text{font-size:1.1rem;line-height:1.8;margin-bottom:1.5rem;position:relative;z-index:1}.testimonial-author{display:flex;align-items:center}.author-image{width:60px;height:60px;border-radius:50%;overflow:hidden;margin-right:1rem}.author-image img{width:100%;height:100%;object-fit:cover}.author-info h4{font-weight:600;margin-bottom:.2rem}.author-info p{color:var(--light-brown);font-size:.9rem}.contact{background:var(--beige);text-align:center;position:relative}.contact-container{max-width:800px;margin:0 auto;display:flex;gap:4rem;text-align:left}.contact-info{flex:1}.contact-form{flex:1;display:grid;gap:1.5rem}.contact-text{font-size:1.1rem;line-height:1.8;margin-bottom:2rem}.info-item{display:flex;align-items:flex-start;margin-bottom:1.5rem}.info-item i{font-size:1.3rem;color:var(--light-brown);margin-right:1rem;min-width:30px}.info-content h4{margin-bottom:.3rem;font-weight:600}.info-content p{color:var(--dark-brown);line-height:1.6}.form-group{display:flex;gap:1.5rem}.form-input{flex:1}input,select,textarea{width:100%;padding:1rem;border:1px solid #ddd;border-radius:5px;font-family:Montserrat,sans-serif;font-size:1rem;transition:var(--transition);background:var(--white)}input:focus,select:focus,textarea:focus{outline:0;border-color:var(--light-brown);box-shadow:0 0 0 2px rgba(216,196,167,.2)}textarea{height:150px;resize:vertical}.submit-btn{background:var(--dark-brown);color:var(--beige);border:none;padding:1.2rem 2.5rem;font-size:1rem;font-weight:600;letter-spacing:1px;cursor:pointer;border-radius:5px;transition:var(--transition);width:100%}.submit-btn:hover{background:var(--black);transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,.1)}.modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(26,26,26,.8);display:flex;justify-content:center;align-items:center;z-index:2000;opacity:0;visibility:hidden;transition:var(--transition)}.modal-overlay.active{opacity:1;visibility:visible}.booking-modal{background:var(--beige);width:90%;max-width:600px;border-radius:10px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.3);transform:translateY(50px);opacity:0;transition:all .5s ease}.modal-overlay.active .booking-modal{transform:translateY(0);opacity:1}.modal-header{background:var(--dark-brown);color:var(--beige);padding:1.5rem 2rem;display:flex;justify-content:space-between;align-items:center}.modal-header h3{font-family:'Playfair Display',serif;font-size:1.5rem}.close-modal{background:0 0;border:none;color:var(--beige);font-size:1.5rem;cursor:pointer;transition:var(--transition)}.close-modal:hover{transform:rotate(90deg)}.modal-body{padding:2rem}footer{background:var(--black);color:var(--beige);padding:3rem 5%;text-align:center}.footer-content{max-width:1200px;margin:0 auto}.footer-logo{font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:1.5rem}.footer-social{display:flex;justify-content:center;gap:1.5rem;margin-bottom:2rem}.social-link{color:var(--beige);font-size:1.5rem;transition:var(--transition)}.social-link:hover{color:var(--light-brown);transform:translateY(-5px)}.copyright{font-size:.9rem;opacity:.7}.mobile-menu{position:fixed;top:0;right:-100%;width:80%;max-width:300px;height:100%;background:var(--beige);z-index:1500;padding:5rem 2rem;transition:var(--transition);box-shadow:-5px 0 15px rgba(0,0,0,.1)}.mobile-menu.active{right:0}.mobile-nav-links{list-style:none}.mobile-nav-links li{margin-bottom:1.5rem}.mobile-nav-links a{color:var(--dark-brown);text-decoration:none;font-weight:500;font-size:1.1rem;transition:var(--transition);display:block;padding:.5rem 0}.mobile-nav-links a:hover{color:var(--light-brown)}.close-menu{position:absolute;top:1.5rem;right:1.5rem;background:0 0;border:none;font-size:1.8rem;color:var(--dark-brown);cursor:pointer}@media (max-width:992px){.gallery-grid{grid-template-columns:repeat(2,1fr)}.testimonials-container{grid-template-columns:1fr}.about-content{flex-direction:column;gap:3rem}.hero-title{font-size:3.5rem}.contact-container{flex-direction:column}}@media (max-width:768px){.navbar{padding:1rem 5%}.nav-links{display:none}.hamburger{display:block;margin-right:145px}.gallery-grid{grid-template-columns:1fr}.form-group{flex-direction:column;gap:1.5rem}.hero-title{font-size:2.8rem}.section-title{font-size:2rem}.cinematic-title{font-size:2.2rem}.lang-switcher span{display:none}}body[dir=rtl]{direction:rtl;font-family:'Noto Sans Arabic',Montserrat,sans-serif}body[dir=rtl] .logo i{margin-right:0;margin-left:10px}body[dir=rtl] .nav-links li{margin-left:0;margin-right:2rem}body[dir=rtl] .nav-links a:after{left:auto;right:0}body[dir=rtl] .about-content{flex-direction:row-reverse}body[dir=rtl] .contact-container{flex-direction:row-reverse}body[dir=rtl] .contact-container{display:flex;flex-direction:row-reverse;gap:40px}body[dir=rtl] .contact-form,body[dir=rtl] .contact-info{direction:rtl;text-align:right}body[dir=rtl] .info-item{display:flex;flex-direction:row-reverse;align-items:flex-start;gap:12px;margin-bottom:16px}body[dir=rtl] .info-content h4,body[dir=rtl] .info-content p{text-align:right;direction:rtl;margin:0}body[dir=rtl] .contact-form input,body[dir=rtl] .contact-form select,body[dir=rtl] .contact-form textarea{direction:rtl;text-align:right}body[dir=rtl] .info-item i{margin-left:.75rem;margin-right:0}body[dir=rtl] .testimonial:before{left:auto;right:20px}body[dir=rtl] .author-image{margin-right:0;margin-left:1rem}body[dir=rtl] .section-title:after{left:auto;right:50%;transform:translateX(50%)}body[dir=rtl] .gallery-title:after{left:auto;right:50%;transform:translateX(50%)}body[dir=rtl] .lang-switcher{margin-left:0;margin-right:1rem}.contact-info{display:flex;flex-direction:column;align-items:center;text-align:center}.info-item{display:flex;flex-direction:column;align-items:center;margin-bottom:1.5rem;gap:8px}.info-item i{font-size:1.5rem;color:var(--light-brown);margin:0}.info-content h4,.info-content p{margin:0;line-height:1.6}.contact-link{color:var(--primary,#292929);text-decoration:none;transition:color .3s ease}.contact-link:hover{color:var(--primary-dark,#333131);text-decoration:underline}.booking-modal{width:500px;max-width:90vw;background-color:#fff;border-radius:10px;padding:1.5rem 2rem;box-shadow:0 5px 20px rgba(0,0,0,.3);max-height:80vh;overflow-y:auto;position:relative}@media (max-width:480px){.booking-modal{width:95vw;padding:1rem 1rem;max-height:85vh}.modal-header h3{font-size:1.3rem}.form-input input,.form-input select,.form-input textarea{font-size:1rem;padding:.5rem .6rem}.submit-btn{font-size:1.1rem;padding:.6rem 1.2rem}}</style>
+</head>
+<body>
+<div class=lang-modal-overlay id=langModal>
+<div class=lang-modal>
+<p>الرجاء اختيار اللغة المفضلة لديك</p>
+<p>Please choose your favorite language</p>
+<div class=lang-options>
+<button class=lang-btn data-lang=ar>
+<i class="fas fa-globe-asia"></i>
+العربية
+</button>
+<button class=lang-btn data-lang=en>
+<i class="fas fa-globe-americas"></i>
+English
+</button>
+</div>
+</div>
+</div>
+<div class=loading-overlay id=loadingOverlay>
+<div class=spinner></div>
+</div>
+<nav class=navbar>
+<a href=# class=logo><i class="fas fa-camera"></i>Maha</a>
+<ul class=nav-links>
+<li><a href=#about data-i18n=nav_about>عني</a></li>
+<li><a href=#gallery data-i18n=nav_gallery>المعرض</a></li>
+<li><a href=#testimonials data-i18n=nav_testimonials>شهادات العملاء</a></li>
+<li><a href=#contact data-i18n=nav_contact>اتصل</a></li>
+</ul>
+<button class=hamburger id=hamburger>
+<i class="fas fa-bars"></i>
+</button>
+<button class=lang-switcher id=langSwitcher>
+<i class="fas fa-globe"></i>
+<span id=currentLang>AR</span>
+</button>
+</nav>
+<div class=mobile-menu id=mobileMenu>
+<button class=close-menu id=closeMenu>
+<i class="fas fa-times"></i>
+</button>
+<ul class=mobile-nav-links>
+<li><a href=#about data-i18n=nav_about>عني</a></li>
+<li><a href=#gallery data-i18n=nav_gallery>المعرض</a></li>
+<li><a href=#testimonials data-i18n=nav_testimonials>شهادات العملاء</a></li>
+<li><a href=#contact data-i18n=nav_contact>اتصل</a></li>
+</ul>
+</div>
+<button class=book-btn id=bookBtn data-i18n=book_button>حجز جلسة</button>
+<section class=hero>
+<div class=hero-slider>
+<div class="slide active"></div>
+<div class=slide></div>
+<div class=slide></div>
+</div>
+<div class=hero-overlay></div>
+<div class=hero-content>
+<h1 class=hero-title data-i18n=hero_title>التقاط القصص الإنسانية</h1>
+<p class=hero-subtitle data-i18n=hero_subtitle>تصوير السفر والبورتريه</p>
+<button class=hero-btn id=exploreBtn data-i18n=hero_button>استكشف أعمالي</button>
+</div>
+<div class=scroll-indicator>
+<i class="fas fa-chevron-down"></i>
+</div>
+</section>
+<section id=about class=about>
+<h2 class=section-title data-i18n=about_title>الفنان خلف العدسة</h2>
+<div class=about-content>
+<div class=about-text>
+<p data-i18n=about_text1>قصتي بدأت من زوايا مومباي، كنت أمشي بالكاميرا وأصوّر كل شيء يلمسني. ما كنت أدور اللقطة المثالية، كنت أدور الشعور الصادق.</p>
+<p data-i18n=about_text2>ومن يومها وأنا أتنقل من بلد لبلد، شفت ناس كثير وصورت لحظات ما تتكرر. اللي يهمني دايم هو الإنسان قبل الصورة، واللحظة اللي تطلع من القلب.</p>
+<p data-i18n=about_text3>صوري انعرضت في مجلات كبيرة زي ناشيونال جيوغرافيك وفوغ، بس أحلى شعور عندي لما شخص يشوف صورته ويقول: "هذا أنا فعلاً".</p>
+<div class=signature data-i18n=signature_name>مها احمد</div>
+</div>
+<div class=about-image>
+<img src="https://images.unsplash.com/photo-1716015110555-4e4e3105bc6d?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="المصور أليكس">
+</div>
+</div>
+</section>
+<section id=gallery class=gallery>
+<h2 class=section-title data-i18n=gallery_title>معرض الصور</h2>
+<div class=gallery-grid>
+<div class=gallery-item>
+<div class=vintage-tape></div>
+<div class=vintage-frame></div>
+<img src="https://images.unsplash.com/photo-1751899068812-46f42a61e4d0?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="تصوير السفر">
+<div class=gallery-overlay>
+<h3 class=gallery-title data-i18n=gallery1_title>رحلات طريق الحرير</h3>
+<p class=gallery-desc data-i18n=gallery1_desc>بعثة لمدة 3 أشهر على طول طرق التجارة القديمة توثق الثقافات من إسطنبول إلى شيآن.</p>
+</div>
+</div>
+<div class=gallery-item>
+<div class=vintage-tape></div>
+<div class=vintage-frame></div>
+<img src="https://images.unsplash.com/photo-1751442188780-c4ba25403392?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="تصوير البورتريه">
+<div class=gallery-overlay>
+<h3 class=gallery-title data-i18n=gallery2_title>بورتريهات حضرية</h3>
+<p class=gallery-desc data-i18n=gallery2_desc>سكان المدن في مواطنهم الطبيعية، يكشفون عن الروح تحت الخرسانة.</p>
+</div>
+</div>
+<div class=gallery-item>
+<div class=vintage-tape></div>
+<div class=vintage-frame></div>
+<img src="https://images.unsplash.com/photo-1751510288459-07e699f48744?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="تصوير المناظر الطبيعية">
+<div class=gallery-overlay>
+<h3 class=gallery-title data-i18n=gallery3_title>أرض العناصر</h3>
+<p class=gallery-desc data-i18n=gallery3_desc>القوة الخام للطبيعة في ثورات البراكين وعواصف الصحراء وصمت القطب الشمالي.</p>
+</div>
+</div>
+<div class=gallery-item>
+<div class=vintage-tape></div>
+<div class=vintage-frame></div>
+<img src="https://images.unsplash.com/photo-1751195119402-66f0e46d008e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="تصوير الأحداث">
+<div class=gallery-overlay>
+<h3 class=gallery-title data-i18n=gallery4_title>احتفالات ثقافية</h3>
+<p class=gallery-desc data-i18n=gallery4_desc>المهرجانات والطقوس التي تحدد المجتمعات من ريو إلى راجستان.</p>
+</div>
+</div>
+<div class=gallery-item>
+<div class=vintage-tape></div>
+<div class=vintage-frame></div>
+<img src="https://images.unsplash.com/photo-1746226389348-6f38f3293496?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="تصوير أبيض وأسود">
+<div class=gallery-overlay>
+<h3 class=gallery-title data-i18n=gallery5_title>لحظات أحادية اللون</h3>
+<p class=gallery-desc data-i18n=gallery5_desc>بعد تجريدها من اللون، تكشف هذه الصور عن الملمس والعاطفة والجمال الخالد.</p>
+</div>
+</div>
+<div class=gallery-item>
+<div class=vintage-tape></div>
+<div class=vintage-frame></div>
+<img src="https://images.unsplash.com/photo-1748959116800-a0ae76a84b2d?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="تصوير الشارع">
+<div class=gallery-overlay>
+<h3 class=gallery-title data-i18n=gallery6_title>وقائع الشارع</h3>
+<p class=gallery-desc data-i18n=gallery6_desc>حياة غير مخططة في أكثر المدن حيوية في العالم، تم التقاطها في لحظات حاسمة.</p>
+</div>
+</div>
+<div class=gallery-item>
+<div class=vintage-tape></div>
+<div class=vintage-frame></div>
+<img src="https://images.unsplash.com/photo-1752157660525-fc5305247dd6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="تصوير البورتريه">
+<div class=gallery-overlay>
+<h3 class=gallery-title data-i18n=gallery2_title>بورتريهات حضرية</h3>
+<p class=gallery-desc data-i18n=gallery2_desc>سكان المدن في مواطنهم الطبيعية، يكشفون عن الروح تحت الخرسانة.</p>
+</div>
+</div>
+<div class=gallery-item>
+<div class=vintage-tape></div>
+<div class=vintage-frame></div>
+<img src="https://images.unsplash.com/photo-1743660622191-81431f288648?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDUyN3x4SHhZVE1ITGdPY3x8ZW58MHx8fHx8" alt="تصوير البورتريه">
+<div class=gallery-overlay>
+<h3 class=gallery-title data-i18n=gallery2_title>بورتريهات حضرية</h3>
+<p class=gallery-desc data-i18n=gallery2_desc>سكان المدن في مواطنهم الطبيعية، يكشفون عن الروح تحت الخرسانة.</p>
+</div>
+</div>
+<div class=gallery-item>
+<div class=vintage-tape></div>
+<div class=vintage-frame></div>
+<img src="https://images.unsplash.com/photo-1744080213172-16e328a39617?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ5N3x4SHhZVE1ITGdPY3x8ZW58MHx8fHx8" alt="تصوير البورتريه">
+<div class=gallery-overlay>
+<h3 class=gallery-title data-i18n=gallery2_title>بورتريهات حضرية</h3>
+<p class=gallery-desc data-i18n=gallery2_desc>سكان المدن في مواطنهم الطبيعية، يكشفون عن الروح تحت الخرسانة.</p>
+</div>
+</div>
+<div class=gallery-item>
+<div class=vintage-tape></div>
+<div class=vintage-frame></div>
+<img src="https://images.unsplash.com/photo-1746433780041-2b08d0753cf8?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="تصوير البورتريه">
+<div class=gallery-overlay>
+<h3 class=gallery-title data-i18n=gallery2_title>بورتريهات حضرية</h3>
+<p class=gallery-desc data-i18n=gallery2_desc>سكان المدن في مواطنهم الطبيعية، يكشفون عن الروح تحت الخرسانة.</p>
+</div>
+</div>
+</div>
+</section>
+<section class=cinematic>
+<div class=cinematic-item>
+<img src="https://images.unsplash.com/photo-1749225589250-47d4430f41fd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="منظر جبلي" class=cinematic-image>
+<div class=cinematic-overlay></div>
+<div class=cinematic-content>
+<h3 class=cinematic-title data-i18n=cinematic_title>"التصوير هو فن تجميد الزمن... القدرة على تخزين المشاعر والمشاعر داخل إطار."</h3>
+<p class=cinematic-text data-i18n=cinematic_text>التُقطت هالصورة وقت الغروب في زقاق هادئ وسط المدينة. استمر ضوء الشمس الذهبي على الجدران القديمة 47 ثانية بس، قبل ما يختفي ويملي المكان ظل وغموض.</p>
+</div>
+</div>
+</section>
+<section id=testimonials class=testimonials>
+<h2 class=section-title data-i18n=testimonials_title>رأي العملاء</h2>
+<div class=testimonials-container>
+<div class=testimonial>
+<p class=testimonial-text data-i18n=testimonial1>صوّر يوم زواجي بطريقة خلتني أعيش اللحظة من جديد. شغل نظيف ومشاعر حقيقية.</p>
+<div class=testimonial-author>
+<div class=author-image>
+<img src="https://images.unsplash.com/photo-1499281851221-5bce936073b0?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=أمل>
+</div>
+<div class=author-info>
+<h4 data-i18n=testimonial1_author>أمل</h4>
+<p data-i18n=testimonial1_location>زفاف – مكة المكرمة</p>
+</div>
+</div>
+</div>
+<div class=testimonial>
+<p class=testimonial-text data-i18n=testimonial2>صور الفريق طلعت رهيبة، قدرت توصل إحساسنا وشخصيتنا بالصورة.</p>
+<div class=testimonial-author>
+<div class=author-image>
+<img src="https://images.unsplash.com/photo-1470635824525-7f1f1e5a4ebc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFuJTIwc2hhZG93fGVufDB8fDB8fHwy" alt=سامي>
+</div>
+<div class=author-info>
+<h4 data-i18n=testimonial2_author>سامي</h4>
+<p data-i18n=testimonial2_location>عمل تجاري – دبي</p>
+</div>
+</div>
+</div>
+<div class=testimonial>
+<p class=testimonial-text data-i18n=testimonial3>جلسة العائلة كانت ممتعة، وكل صورة تحكي شيء جميل عنا.</p>
+<div class=testimonial-author>
+<div class=author-image>
+<img src="https://images.unsplash.com/photo-1677465785821-2e875f343f53?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=نورة>
+</div>
+<div class=author-info>
+<h4 data-i18n=testimonial3_author>نورة</h4>
+<p data-i18n=testimonial3_location>تصوير عائلي – الرياض</p>
+</div>
+</div>
+</div>
+<div class=testimonial>
+<p class=testimonial-text data-i18n=testimonial4>صوره ساعدتنا نوصل رسالتنا للعالم بطريقة إنسانية وملهمة.</p>
+<div class=testimonial-author>
+<div class=author-image>
+<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt=ليلى>
+</div>
+<div class=author-info>
+<h4 data-i18n=testimonial4_author>ليلى</h4>
+<p data-i18n=testimonial4_location>مبادرة خيرية – المدينة المنورة</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=contact class=contact>
+<h2 class=section-title data-i18n=contact_title>لنعمل معًا</h2>
+<div class=contact-container>
+<div class=contact-info>
+<p class=contact-text data-i18n=contact_text>سواء كنت تخطط لجلسة بورتريه، زفاف في وجهة سياحية، أو مشروع تجاري، يسعدني أن أسمع عن رؤيتك. لنصنع شيئاً استثنائياً معاً.</p>
+<div class=info-item>
+<i class="fas fa-envelope"></i>
+<div class=info-content>
+<h4 data-i18n=contact_email_title>الايميل</h4>
+<p><a href=mailto:maha@gmail.com class=contact-link>maha@gmail.com</a></p>
+</div>
+</div>
+<div class=info-item>
+<i class="fas fa-phone-alt"></i>
+<div class=info-content>
+<h4 data-i18n=contact_phone_title>رقم الجوال</h4>
+<p><a href=tel:0512345678 class=contact-link>0512345678</a></p>
+</div>
+</div>
+<div class=info-item>
+<i class="fas fa-clock"></i>
+<div class=info-content>
+<h4 data-i18n=contact_hours_title>ساعات العمل</h4>
+<p data-i18n=contact_hours>الإثنين-الجمعة: 9 صباحاً - 6 مساءً<br>السبت: 10 صباحاً - 4 مساءً</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class=footer-content>
+<div class=footer-logo>Maha Ahmed</div>
+<div class=footer-social>
+<a href=# class=social-link><i class="fab fa-instagram"></i></a>
+<a href=# class=social-link><i class="fab fa-facebook-f"></i></a>
+<a href=# class=social-link><i class="fab fa-twitter"></i></a>
+<a href=# class=social-link><i class="fab fa-pinterest-p"></i></a>
+</div>
+<p class=mt-2>This portfolio was designed and developed By <a href=https://salla.sa/nawastore1 style=color:#f0f8ff;text-decoration:double>Nawa Code Store</a></p>
+</div>
+</footer>
+<div class=modal-overlay id=bookingModal>
+<div class=booking-modal>
+<div class=modal-header>
+<h3 data-i18n=booking_title>احجز جلستك</h3>
+<button class=close-modal id=closeModal>&times;</button>
+</div>
+<div class=modal-body>
+<form id=bookingForm>
+<div class=form-input style=margin-bottom:1.5rem>
+<select required data-i18n-placeholder=session_placeholder>
+<option value="" disabled selected data-i18n=session_option>نوع الجلسة</option>
+<option data-i18n=session1>جلسة بورتريه (ساعة واحدة)</option>
+<option data-i18n=session2>جلسة بورتريه (ساعتان)</option>
+<option data-i18n=session3>جلسة أزواج</option>
+<option data-i18n=session4>جلسة عائلية</option>
+<option data-i18n=session5>تصوير الزفاف</option>
+<option data-i18n=session6>مشروع تجاري</option>
+</select>
+</div>
+<div class=form-group>
+<div class=form-input>
+<input placeholder=اسمك required data-i18n-placeholder=name_placeholder>
+</div>
+<div class=form-input>
+<input type=email placeholder="بريدك الإلكتروني" required data-i18n-placeholder=email_placeholder>
+</div>
+</div>
+<div class=form-group>
+<div class=form-input>
+<input type=tel placeholder="رقم الهاتف" required data-i18n-placeholder=phone_placeholder dir=rtl>
+</div>
+<div class=form-input>
+<input type=number placeholder="عدد الأشخاص" min=1 required data-i18n-placeholder=people_placeholder>
+</div>
+</div>
+<div class=form-group>
+<div class=form-input>
+<input type=date required lang=ar dir=rtl style=text-align:right aria-label="اختر التاريخ المناسب" title="اختر التاريخ المناسب" data-i18n-placeholder=date_placeholder>
+</div>
+<div class=form-input>
+<input placeholder=الموقع data-i18n-placeholder=location_placeholder>
+</div>
+</div>
+<div class=form-input>
+<textarea placeholder="أخبرني تفاصيل اكثر..." rows=4 required data-i18n-placeholder=vision_placeholder></textarea>
+</div>
+<button type=submit class=submit-btn data-i18n=booking_button>طلب حجز</button>
+</form>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/sweetalert2@11></script>
+<script>const bookingFormElement=document.getElementById("bookingForm");bookingFormElement.addEventListener("submit",(function(e){e.preventDefault(),bookingModal.classList.remove("active"),document.body.style.overflow="",Swal.fire({title:"تم إرسال الحجز!",text:"شكرًا لك، تم استلام طلبك وسنتواصل معك قريبًا 💌",icon:"success",confirmButtonText:"تمام",confirmButtonColor:"#a0522d",backdrop:!0}),bookingFormElement.reset()}));const translations={en:{nav_about:"About",nav_gallery:"Gallery",nav_testimonials:"Testimonials",nav_contact:"Contact",book_button:"Book a Session",switch_lang:"AR",hero_title:"Capturing Human Stories",hero_subtitle:"Travel & Portrait Photography",hero_button:"Explore My Work",about_title:"The Artist Behind The Lens",about_text1:"My journey began in the bustling streets of Mumbai, where I discovered my passion for capturing raw human emotions. With a camera in hand and an insatiable curiosity, I've spent the last decade traveling across 47 countries, documenting the extraordinary in the ordinary.",about_text2:"My approach is simple: authentic connection over perfect poses. Whether it's a Mongolian nomad or a New York executive, I seek the unguarded moment that reveals our shared humanity.",about_text3:"My work has been featured in National Geographic, Vogue, and The New York Times, but my true satisfaction comes from the personal stories preserved for generations to come.",signature_name:"Maha Ahmed",gallery_title:"Curated Collections",gallery1_title:"Silk Road Journeys",gallery1_desc:"A 3-month expedition along ancient trade routes capturing cultures from Istanbul to Xi'an.",gallery2_title:"Urban Portraits",gallery2_desc:"City dwellers in their natural habitats, revealing the soul beneath the concrete.",gallery3_title:"Elemental Earth",gallery3_desc:"Nature's raw power captured in volcanic eruptions, desert storms, and arctic silence.",gallery4_title:"Cultural Celebrations",gallery4_desc:"Festivals and rituals that define communities from Rio to Rajasthan.",gallery5_title:"Monochrome Moments",gallery5_desc:"Stripped of color, these images reveal texture, emotion, and timeless beauty.",gallery6_title:"Street Chronicles",gallery6_desc:"Unscripted life in the world's most vibrant cities, captured in decisive moments.",cinematic_title:'"Photography is the art of frozen time... the ability to store emotion and feelings within a frame."',cinematic_text:"This image was captured at dawn in the Himalayas after a 3-day trek. The play of light on the peaks lasted only 47 seconds before the clouds rolled in.",testimonials_title:"Client Stories",testimonial1:"Alex captured our wedding in a way that still gives me chills. He didn't just take photos—he told our love story through images that feel alive with emotion.",testimonial1_author:"Amal",testimonial1_location:"Wedding Client, Paris",testimonial2:"Working with Alex for our brand campaign was transformative. His portraits of our team captured our company's spirit better than words ever could.",testimonial2_author:"Sami",testimonial2_location:"CEO, Atlas Innovations",testimonial3:"The family portraits Alex created for us are our most treasured possessions. He captured the unique personalities of each family member while creating a cohesive story.",testimonial3_author:"Noura",testimonial3_location:"Portrait Session, Barcelona",testimonial4:"Alex's documentary work for our non-profit changed how people perceive our cause. His images don't just show need—they show dignity, resilience, and hope.",testimonial4_author:"Laila",testimonial4_location:"Director, Global Hope Initiative",contact_title:"Let's Work Together",contact_text:"Whether you're planning a portrait session, destination wedding, or commercial project, I'd love to hear about your vision. Let's craft something extraordinary.",contact_location_title:"Studio Location",contact_email_title:"Email Me",contact_phone_title:"Call Me",contact_hours_title:"Working Hours",contact_hours:"Monday-Friday: 9am - 6pm , Saturday: 10am - 4pm",name_placeholder:"Your Name",email_placeholder:"Your Email",subject_placeholder:"Subject",inquiry_placeholder:"Type of Inquiry",inquiry_option:"Type of Inquiry",inquiry1:"Portrait Session",inquiry2:"Wedding Photography",inquiry3:"Commercial Project",inquiry4:"Travel Assignment",inquiry5:"Other",message_placeholder:"Tell me about your project...",submit_button:"Send Message",booking_title:"Book Your Session",session_placeholder:"Session Type",session_option:"Session Type",session1:"Portrait Session (1 hour)",session2:"Portrait Session (2 hours)",session3:"Couples Session",session4:"Family Session",session5:"Wedding Photography",session6:"Commercial Project",phone_placeholder:"Phone Number",people_placeholder:"Number of People",date_placeholder:"Preferred Date",location_placeholder:"Location",vision_placeholder:"Tell me about your vision...",booking_button:"Request Booking",rights:"All rights reserved."},ar:{nav_about:"عني",nav_gallery:"المعرض",nav_testimonials:"شهادات العملاء",nav_contact:"اتصل",book_button:"حجز جلسة",switch_lang:"EN",hero_title:"التقاط القصص الإنسانية",hero_subtitle:"تصوير السفر والبورتريه",hero_button:"استكشف أعمالي",about_title:"الفنان خلف العدسة",about_text1:"بدايتي كانت في شوارع مومباي، كنت أمشي بالكاميرا وأصوّر أي لحظة تلمس قلبي. ما كنت أدور الكمال، كنت أدور الصدق في اللقطة.",about_text2:"اللي يهمني دايم هو التواصل الحقيقي، مو الوضعيات المزيّفة. سواء أصوّر راعي غنم ولا مدير شركة، أبحث عن اللحظة اللي تطلع من القلب.",about_text3:"صوري وصلت لمجلات كبيرة زي ناشيونال جيوغرافيك وفوغ، بس أكثر شي يفرحني لما شخص يشوف صورته ويقول: هذا أنا.",signature_name:"مها احمد",gallery_title:"المجموعات المختارة",gallery1_title:"رحلات طريق الحرير",gallery1_desc:"بعثة لمدة 3 أشهر على طول طرق التجارة القديمة توثق الثقافات من إسطنبول إلى شيآن.",gallery2_title:"بورتريهات حضرية",gallery2_desc:"سكان المدن في مواطنهم الطبيعية، يكشفون عن الروح تحت الخرسانة.",gallery3_title:"أرض العناصر",gallery3_desc:"القوة الخام للطبيعة في ثورات البراكين وعواصف الصحراء وصمت القطب الشمالي.",gallery4_title:"احتفالات ثقافية",gallery4_desc:"المهرجانات والطقوس التي تحدد المجتمعات من ريو إلى راجستان.",gallery5_title:"لحظات أحادية اللون",gallery5_desc:"بعد تجريدها من اللون، تكشف هذه الصور عن الملمس والعاطفة والجمال الخالد.",gallery6_title:"وقائع الشارع",gallery6_desc:"حياة غير مخططة في أكثر المدن حيوية في العالم، تم التقاطها في لحظات حاسمة.",cinematic_title:'"التصوير الفوتوغرافي هو فن تجميد الزمن... القدرة على تخزين المشاعر والمشاعر داخل إطار."',cinematic_text:"تم التقاط هذه الصورة عند الفجر في جبال الهيمالايا بعد رحلة استغرقت 3 أيام. استمر لعب الضوء على القمم 47 ثانية فقط قبل أن تتدحرج السحب.",testimonials_title:"رأي العملاء",testimonial1:"مها صورت يوم زواجي بطريقة خلتني أعيش اللحظة من جديد. شغل نظيف ومشاعر حقيقية.",testimonial1_location:"زفاف – باريس",testimonial2:"صور الفريق طلعت رهيبة، قدرت توصل إحساسنا وشخصيتنا بالصورة.",testimonial2_location:"عمل تجاري – دبي",testimonial3:"جلسة العائلة كانت ممتعة، وكل صورة تحكي شيء جميل عنا.",testimonial3_location:"تصوير عائلي – الرياض",testimonial4:"صورها ساعدتنا نوصل رسالتنا للعالم بطريقة إنسانية وملهمة.",testimonial4_location:"مبادرة خيرية – مكة المكرمة",contact_title:"لنعمل معاً",contact_text:"سواء كنت تخطط لجلسة بورتريه، زفاف في وجهة سياحية، أو مشروع تجاري، يسعدني أن أسمع عن رؤيتك. لنصنع شيئاً استثنائياً معاً.",contact_location_title:"موقع الاستوديو",contact_email_title:"الايميل",contact_phone_title:"رقم الهاتف",contact_hours_title:"ساعات العمل",contact_hours:"جميع ايام الاسبوع",name_placeholder:"اسمك",email_placeholder:"بريدك الإلكتروني",subject_placeholder:"الموضوع",inquiry_placeholder:"نوع الاستفسار",inquiry_option:"نوع الاستفسار",inquiry1:"جلسة بورتريه",inquiry2:"تصوير الزفاف",inquiry3:"مشروع تجاري",inquiry4:"مهمة سفر",inquiry5:"أخرى",message_placeholder:"أخبرني عن مشروعك...",submit_button:"إرسال الرسالة",booking_title:"احجز جلستك",session_placeholder:"نوع الجلسة",session_option:"نوع الجلسة",session1:"جلسة بورتريه (ساعة واحدة)",session2:"جلسة بورتريه (ساعتان)",session3:"جلسة أزواج",session4:"جلسة عائلية",session5:"تصوير الزفاف",session6:"مشروع تجاري",phone_placeholder:"رقم الهاتف",people_placeholder:"عدد الأشخاص",date_placeholder:"التاريخ المفضل",location_placeholder:"الموقع",vision_placeholder:"أخبرني عن رؤيتك...",booking_button:"طلب حجز",rights:"جميع الحقوق محفوظة."}};function setLanguage(e){document.documentElement.dir="ar"===e?"rtl":"ltr",document.documentElement.lang=e,document.getElementById("currentLang").textContent="ar"===e?"EN":"AR",document.querySelectorAll("[data-i18n]").forEach((t=>{const o=t.getAttribute("data-i18n");translations[e][o]&&(t.textContent=translations[e][o])})),document.querySelectorAll("[data-i18n-placeholder]").forEach((t=>{const o=t.getAttribute("data-i18n-placeholder");translations[e][o]&&(t.placeholder=translations[e][o])})),document.querySelectorAll("select option").forEach((t=>{if(t.hasAttribute("data-i18n")){const o=t.getAttribute("data-i18n");translations[e][o]&&(t.textContent=translations[e][o])}})),localStorage.setItem("preferredLanguage",e)}function initLanguage(){const e=localStorage.getItem("preferredLanguage"),t=document.getElementById("langModal");e?(document.getElementById("loadingOverlay").classList.add("active"),setTimeout((()=>{setLanguage(e),setTimeout((()=>{document.getElementById("loadingOverlay").classList.remove("active")}),500)}),1e3)):t.classList.add("active")}document.querySelectorAll(".lang-btn").forEach((e=>{e.addEventListener("click",(function(){const e=this.getAttribute("data-lang");document.getElementById("loadingOverlay").classList.add("active"),document.getElementById("langModal").classList.remove("active"),setTimeout((()=>{setLanguage(e),setTimeout((()=>{document.getElementById("loadingOverlay").classList.remove("active")}),500)}),1e3)}))})),document.getElementById("langSwitcher").addEventListener("click",(function(){const e="en"===document.documentElement.lang?"ar":"en";document.getElementById("loadingOverlay").classList.add("active"),setTimeout((()=>{setLanguage(e),setTimeout((()=>{document.getElementById("loadingOverlay").classList.remove("active")}),500)}),500)})),window.addEventListener("scroll",(function(){const e=document.querySelector(".navbar");window.scrollY>50?e.classList.add("scrolled"):e.classList.remove("scrolled")}));let currentSlide=0;const slides=document.querySelectorAll(".slide");function showSlide(e){slides.forEach((e=>e.classList.remove("active"))),slides[e].classList.add("active")}function nextSlide(){currentSlide=(currentSlide+1)%slides.length,showSlide(currentSlide)}setInterval(nextSlide,5e3),window.addEventListener("scroll",(function(){document.querySelectorAll(".cinematic-item").forEach((e=>{const t=.3*-(window.pageYOffset-e.offsetTop);e.style.backgroundPosition=`center ${t}px`}))}));const galleryItems=document.querySelectorAll(".gallery-item");galleryItems.forEach((e=>{e.addEventListener("mouseenter",(function(){this.querySelector("img").style.transform="scale(1.1)",this.querySelector(".gallery-overlay").style.opacity="1"})),e.addEventListener("mouseleave",(function(){this.querySelector("img").style.transform="scale(1)",this.querySelector(".gallery-overlay").style.opacity="0"}))})),document.querySelectorAll('a[href^="#"]').forEach((e=>{e.addEventListener("click",(function(e){e.preventDefault();const t=document.querySelector(this.getAttribute("href"));t&&window.scrollTo({top:t.offsetTop-80,behavior:"smooth"})}))}));const hamburger=document.getElementById("hamburger"),mobileMenu=document.getElementById("mobileMenu"),closeMenu=document.getElementById("closeMenu");hamburger.addEventListener("click",(function(){mobileMenu.classList.add("active")})),closeMenu.addEventListener("click",(function(){mobileMenu.classList.remove("active")})),document.querySelectorAll(".mobile-nav-links a").forEach((e=>{e.addEventListener("click",(function(){mobileMenu.classList.remove("active")}))}));const bookBtn=document.getElementById("bookBtn"),bookingModal=document.getElementById("bookingModal"),closeModal=document.getElementById("closeModal"),exploreBtn=document.getElementById("exploreBtn");bookBtn.addEventListener("click",(function(){bookingModal.classList.add("active"),document.body.style.overflow="hidden"})),exploreBtn.addEventListener("click",(function(){const e=document.getElementById("gallery");window.scrollTo({top:e.offsetTop-80,behavior:"smooth"})})),closeModal.addEventListener("click",(function(){bookingModal.classList.remove("active"),document.body.style.overflow="auto"})),bookingModal.addEventListener("click",(function(e){e.target===bookingModal&&(bookingModal.classList.remove("active"),document.body.style.overflow="auto")}));const contactForm=document.getElementById("contactForm"),bookingForm=document.getElementById("bookingForm");contactForm.addEventListener("submit",(function(e){e.preventDefault();const t=document.documentElement.lang;Swal.fire({title:"ar"===t?"تم إرسال الرسالة!":"Message Sent!",text:"ar"===t?"شكراً على استفسارك. سأرد عليك خلال 24 ساعة.":"Thank you for your inquiry. I will get back to you within 24 hours.",icon:"success",confirmButtonColor:"#3A2D28",confirmButtonText:"ar"===t?"مواصلة التصفح":"Continue Browsing"}),contactForm.reset()})),bookingForm.addEventListener("submit",(function(e){e.preventDefault();const t=document.documentElement.lang;bookingModal.classList.remove("active"),document.body.style.overflow="auto",Swal.fire({title:"ar"===t?"تم طلب الحجز!":"Booking Requested!",text:"ar"===t?"تم استلام طلبك. سأؤكد التوفر خلال 48 ساعة.":"Your session request has been received. I will confirm availability within 48 hours.",icon:"success",confirmButtonColor:"#3A2D28",confirmButtonText:"ar"===t?"رائع!":"Great!"}),bookingForm.reset()})),window.addEventListener("DOMContentLoaded",initLanguage)</script>
+</body>
+</html>
